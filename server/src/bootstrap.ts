@@ -31,9 +31,9 @@ const bootstrap = ({ strapi }: { strapi: Core.Strapi }) => {
       beforeCreate(event) {
         strapi.plugin(PLUGIN_ID).service('service').handleCRUDOperation(event);
       },
-      beforeUpdate(event) {
+      /*beforeUpdate(event) {
         strapi.plugin(PLUGIN_ID).service('service').handleCRUDOperation(event);
-      },
+      },*/
     });
   }
 };
